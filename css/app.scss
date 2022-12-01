@@ -24,6 +24,15 @@ $white: #fff;
     font-family: "Roboto-Regular";
     src: url(../fonts/Roboto-Regular.ttf);
 }
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-Light";
+    src: url(../fonts/Roboto-Light.ttf);
+}
 
 @font-face {
     font-family: "DarkerGrotesque-regular";
@@ -82,7 +91,7 @@ a {
     width: auto;
     margin: 5px;
     border-radius: 7px;
-    padding: 6px 30px; 
+    padding: 6px 30px;
     font-size: 19px;
     color: #fff;
     text-decoration: none;
@@ -115,7 +124,7 @@ a {
     font-size: 21px;
 }
 
- 
+
 
 
 
@@ -129,6 +138,7 @@ body {
 
 .default {
     padding: 90px 0;
+
     @media (max-width:768px) {
         padding: 30px 15px;
     }
@@ -153,6 +163,11 @@ body {
             &:hover {
                 color: $primary;
             }
+
+            &.current {
+                color: $primary;
+                font-weight: bold;
+            }
         }
     }
 }
@@ -161,11 +176,12 @@ body {
     background: #E3DDD8;
     min-height: 90vh;
 
-    .inner{
+    .inner {
         padding-top: 50px;
+
         @media (max-width:768px) {
-            text-align: center!important;
-            
+            text-align: center !important;
+
         }
     }
 
@@ -175,13 +191,14 @@ body {
         color: $primary;
         line-height: 0.8;
         margin-bottom: 35px;
+
         @media (max-width:768px) {
-            text-align: center!important;
+            text-align: center !important;
             font-size: 3.6rem;
         }
-        
+
     }
-     
+
 }
 
 .bleesed {
@@ -193,8 +210,9 @@ body {
         line-height: 0.8;
         color: $secondary;
         font-family: "DarkerGrotesque-semibold";
+
         @media (max-width:768px) {
-            text-align: center!important;
+            text-align: center !important;
             font-size: 3.6rem;
         }
     }
@@ -220,8 +238,9 @@ body {
         line-height: 1;
         color: $primary;
         font-family: "DarkerGrotesque-semibold";
+
         @media (max-width:768px) {
-            text-align: center!important;
+            text-align: center !important;
             font-size: 3.6rem;
         }
     }
@@ -246,8 +265,9 @@ body {
     .upperGap {
         margin-top: 100px;
         padding: 0 15px;
+
         @media (max-width:768px) {
-            text-align: center!important;
+            text-align: center !important;
             font-size: 3.6rem;
         }
     }
@@ -255,23 +275,27 @@ body {
 
 .ranks {
     background-color: #DCCFC3;
-    .ranksAddjust{
+
+    .ranksAddjust {
         @media (max-width:768px) {
-            text-align: center!important;
+            text-align: center !important;
             font-size: 3.6rem;
         }
     }
+
     .title {
         font-size: 80px;
         text-align: center;
         line-height: 1;
         color: $primary;
         font-family: "DarkerGrotesque-semibold";
+
         @media (max-width:768px) {
-            text-align: center!important;
+            text-align: center !important;
             font-size: 3.6rem;
         }
     }
+
     .paratitle {
         font-size: 40px;
         line-height: 1;
@@ -293,19 +317,22 @@ body {
 
 
 
-.together{
+.together {
     background-color: #E9E1DA;
+
     .title {
         font-size: 80px;
         text-align: center;
         line-height: 1;
         color: $primary;
         font-family: "DarkerGrotesque-semibold";
+
         @media (max-width:768px) {
-            text-align: center!important;
+            text-align: center !important;
             font-size: 3.6rem;
         }
     }
+
     .paratitle {
         font-size: 100px;
         line-height: 1;
@@ -314,38 +341,8 @@ body {
         text-align: center;
         font-family: "DarkerGrotesque-bold";
     }
-    .theme-para{
-        font-size: 20px;
-        line-height: 1.3;
-        color: $txt;
-        text-align: center;
-        margin: 12px 0;
-        font-family: "Roboto-Regular";
-        font-weight: 300;
-    }
-}
-.client{
-    background: #E1D8CE;
-    .title {
-        font-size: 80px;
-        text-align: center;
-        line-height: 1;
-        color: $primary;
-        font-family: "DarkerGrotesque-semibold";
-        @media (max-width:768px) {
-            text-align: center!important;
-            font-size: 3.6rem;
-        }
-    }
-    .paratitle {
-        font-size: 100px;
-        line-height: 1;
-        color: $secondary;
-        margin-bottom: 15px;
-        text-align: center;
-        font-family: "DarkerGrotesque-bold";
-    }
-    .theme-para{
+
+    .theme-para {
         font-size: 20px;
         line-height: 1.3;
         color: $txt;
@@ -356,20 +353,60 @@ body {
     }
 }
 
-footer{
+.client {
+    background: #E1D8CE;
+
+    .title {
+        font-size: 80px;
+        text-align: center;
+        line-height: 1;
+        color: $primary;
+        font-family: "DarkerGrotesque-semibold";
+
+        @media (max-width:768px) {
+            text-align: center !important;
+            font-size: 3.6rem;
+        }
+    }
+
+    .paratitle {
+        font-size: 100px;
+        line-height: 1;
+        color: $secondary;
+        margin-bottom: 15px;
+        text-align: center;
+        font-family: "DarkerGrotesque-bold";
+    }
+
+    .theme-para {
+        font-size: 20px;
+        line-height: 1.3;
+        color: $txt;
+        text-align: center;
+        margin: 12px 0;
+        font-family: "Roboto-Regular";
+        font-weight: 300;
+    }
+}
+
+footer {
     background-color: #4E4B44;
-    .footer-upper{
+
+    .footer-upper {
         font-size: 20px;
         color: #FFFFFF;
         font-family: "DarkerGrotesque-regular";
-        a{
-            color: #FFFFFF ;
-            &:hover{
+
+        a {
+            color: #FFFFFF;
+
+            &:hover {
                 color: $primary;
             }
         }
     }
-    .footer-link{
+
+    .footer-link {
         text-transform: uppercase;
         font-size: 24px;
         border-bottom: 1px solid $white;
@@ -377,16 +414,19 @@ footer{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        a{
-            color: #FFFFFF ;
-            &:hover{
+
+        a {
+            color: #FFFFFF;
+
+            &:hover {
                 color: $primary;
             }
         }
     }
-    .footer-bottom{
+
+    .footer-bottom {
         text-transform: uppercase;
-        font-size: 20px; 
+        font-size: 20px;
         font-family: "DarkerGrotesque-regular";
         color: $white;
         font-weight: 500;
@@ -398,13 +438,86 @@ footer{
 
 
 
+.about {
+    background: #E3DDD8;
+
+    .title {
+        font-size: 80px;
+        text-align: center;
+        line-height: 1;
+        color: $primary;
+        font-family: "DarkerGrotesque-semibold";
+
+        @media (max-width:768px) {
+            text-align: center !important;
+            font-size: 3.6rem;
+        }
+    }
+
+    .paratitle {
+        font-size: 30px;
+        line-height: 1;
+        color: #003057;
+        margin-bottom: 15px ;
+        font-family: "DarkerGrotesque-bold";
+    }
+
+    .theme-para {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #4E4B44;
+        margin: 12px 0;
+        font-family: "Roboto-Light";
+        font-weight: 300;
+    }
+}
+.stage {
+    background: #E8E1D9;
+
+    .title {
+        font-size: 80px;
+        text-align: center;
+        line-height: 1;
+        color: $primary;
+        font-family: "DarkerGrotesque-semibold";
+
+        @media (max-width:768px) {
+            text-align: center !important;
+            font-size: 3.6rem;
+        }
+    }
+
+    .paratitle {
+        font-size: 40px;
+        line-height: 1;
+        color: #003057;
+        margin-bottom: 15px ;
+        font-family: "DarkerGrotesque-bold";
+    }
+
+    .theme-para { 
+        font-size: 16px;
+        line-height: 1.6;
+        color: #4E4B44;
+        margin: 12px 0;
+        font-family: "Roboto-Light";
+        font-weight: 300;
+    }
+}
+
+.why-donors{
+    @extend .help;
+    background: #E3DDD8!important;
+}
+
+
 
 body::-webkit-scrollbar {
     background-color: #fefefe;
     width: 7px;
-  }
+}
 
-  body::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
     border-radius: 50px;
-    background: $primary; 
-  }
+    background: $primary;
+}
