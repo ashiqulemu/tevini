@@ -404,10 +404,10 @@ footer .footer-bottom {
   font-weight: 300;
 }
 
-.stage {
+.stage, .account {
   background: #E8E1D9;
 }
-.stage .title {
+.stage .title, .account .title {
   font-size: 80px;
   text-align: center;
   line-height: 1;
@@ -415,19 +415,19 @@ footer .footer-bottom {
   font-family: "DarkerGrotesque-semibold";
 }
 @media (max-width: 768px) {
-  .stage .title {
+  .stage .title, .account .title {
     text-align: center !important;
     font-size: 3.6rem;
   }
 }
-.stage .paratitle {
+.stage .paratitle, .account .paratitle {
   font-size: 40px;
   line-height: 1;
   color: #003057;
   margin-bottom: 15px;
   font-family: "DarkerGrotesque-bold";
 }
-.stage .theme-para {
+.stage .theme-para, .account .theme-para {
   font-size: 16px;
   font-family: "Roboto-Light";
   line-height: 1.6;
@@ -478,6 +478,10 @@ footer .footer-bottom {
   color: #4E4B44;
 }
 
+.txt-primary {
+  color: #18988B !important;
+}
+
 body::-webkit-scrollbar {
   background-color: #fefefe;
   width: 7px;
@@ -486,4 +490,133 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   border-radius: 50px;
   background: #18988B;
+}
+
+.fs-20 {
+  font-size: 20px !important;
+}
+
+.border-primary {
+  border: 1px solid #18988B !important;
+}
+
+.txt-primary {
+  color: #18988B !important;
+}
+
+.account {
+  background: #E1D8CE !important;
+}
+
+#myTab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  padding: 0;
+  margin: 0 auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+#myTab .nav-link {
+  border-radius: 0;
+  border: 0;
+  background: #fff !important;
+  color: #000;
+}
+#myTab .nav-link.active {
+  background: #18988B !important;
+  color: #fff;
+}
+
+.contact {
+  background-color: #E3DDD8;
+}
+.contact .title {
+  font-size: 80px;
+  line-height: 0.8;
+  color: #003057;
+  font-family: "DarkerGrotesque-semibold";
+}
+@media (max-width: 768px) {
+  .contact .title {
+    text-align: center !important;
+    font-size: 3.6rem;
+  }
+}
+.contact .theme-para {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #4E4B44;
+  margin: 24px 0;
+  font-family: "Roboto-Regular";
+}
+
+.form-custom .form-control {
+  background-color: #fff;
+  font-family: "DarkerGrotesque-semibold";
+  border-radius: 7px;
+  margin: 15px 0;
+  min-height: 43px;
+  border: 0;
+  font-size: 19px;
+  color: #003057;
+}
+
+.contactInfo {
+  background: #DACFC2;
+}
+.contactInfo .paratitle {
+  font-size: 40px;
+  line-height: 1;
+  color: #003057;
+  margin-bottom: 15px;
+  font-family: "DarkerGrotesque-bold";
+}
+.contactInfo .theme-para {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #4E4B44;
+  margin: 24px 0;
+  font-family: "Roboto-Regular";
+}
+
+.platform {
+  background: #E8E1D9;
+}
+.platform .title {
+  font-size: 80px;
+  text-align: center;
+  line-height: 1;
+  color: #18988B;
+  font-family: "DarkerGrotesque-semibold";
+}
+@media (max-width: 768px) {
+  .platform .title {
+    text-align: center !important;
+    font-size: 3.6rem;
+  }
+}
+.platform .paratitle {
+  text-align: center;
+  font-size: 40px;
+  line-height: 1;
+  color: #003057;
+  margin-bottom: 15px;
+  font-family: "DarkerGrotesque-bold";
+}
+@media (max-width: 768px) {
+  .platform .paratitle {
+    margin-bottom: 33px;
+  }
+}
+.platform .numbering {
+  position: absolute;
+  width: 68px;
+  left: 8%;
+}
+@media (max-width: 768px) {
+  .platform .numbering {
+    width: 55px;
+  }
 }/*# sourceMappingURL=app.css.map */
