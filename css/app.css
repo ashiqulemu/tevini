@@ -71,6 +71,7 @@ a {
 }
 
 .btn-theme {
+  border: 0;
   width: auto;
   margin: 5px;
   border-radius: 7px;
@@ -619,4 +620,65 @@ body::-webkit-scrollbar-thumb {
   .platform .numbering {
     width: 55px;
   }
+}
+
+.auth {
+  background: #FBF3ED;
+}
+.auth .title {
+  font-size: 40px;
+  line-height: 0.8;
+  color: #18988B;
+  font-family: "DarkerGrotesque-semibold";
+}
+@media (max-width: 768px) {
+  .auth .title {
+    text-align: center !important;
+    font-size: 3.6rem;
+  }
+}
+.auth .theme-para {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #4E4B44;
+  margin: 24px 0;
+  font-family: "Roboto-Regular";
+}
+.auth .theme-link {
+  text-decoration: underline;
+  font-size: 19px;
+  font-family: "DarkerGrotesque-regular";
+  color: #18988B;
+  text-align: center;
+}
+
+.terms {
+  background: #E8E1D9;
+}
+.terms .title {
+  font-size: 80px;
+  line-height: 0.8;
+  color: #003057;
+  font-family: "DarkerGrotesque-semibold";
+}
+@media (max-width: 768px) {
+  .terms .title {
+    text-align: center !important;
+    font-size: 3.6rem;
+  }
+}
+.terms .theme-para {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #4E4B44;
+  margin: 24px 0;
+  text-align: justify;
+  font-family: "Roboto-Regular";
+}
+.terms .theme-link {
+  text-decoration: underline;
+  font-size: 19px;
+  font-family: "DarkerGrotesque-regular";
+  color: #18988B;
+  text-align: center;
 }/*# sourceMappingURL=app.css.map */
