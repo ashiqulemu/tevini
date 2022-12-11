@@ -146,9 +146,6 @@ body {
   background: #E3DDD8;
   min-height: 90vh;
 }
-.banner .inner {
-  padding-top: 50px;
-}
 @media (max-width: 768px) {
   .banner .inner {
     text-align: center !important;
