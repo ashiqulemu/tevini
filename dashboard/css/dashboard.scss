@@ -72,7 +72,7 @@ a {
 // needable  classes 
 
 .txt-primary {
-    color: $primary;
+    color: $primary!important;
 }
 
 .txt-secondary {
@@ -86,6 +86,10 @@ a {
 
 .bg-primary {
     background: $primary!important ;
+}
+
+.bg-ternary {
+    background: #BBB1A6!important ;
 }
 
 .btn-theme {
@@ -122,7 +126,7 @@ a {
 
 .txt-theme {
     color: $secondary;
-    font-family: "DarkerGrotesque-regular",sans-serif;
+    font-family: "DarkerGrotesque-regular", sans-serif;
     font-weight: 500;
     font-size: 19px;
 }
@@ -131,7 +135,19 @@ a {
 
 
 body {
-    font-family: "DarkerGrotesque-regular",sans-serif;
+    font-family: "DarkerGrotesque-regular", sans-serif;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+.txt-dash{
+    font-size: 23px;
+    font-weight: 700;
 }
 
 
@@ -140,9 +156,24 @@ body {
     min-height: 100vh;
 
     .sidebar {
-        position: relative;
         flex-basis: 290px;
         background-color: #E8E1D9;
+        transition: all 0.4s ease-in-out;
+        position: relative;
+
+        @media(max-width:880px) {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: -250px;
+            z-index: 2;
+        }
+
+        &.active {
+            left: 0;
+        }
+
+
 
         .brand {
             margin-top: 50px;
@@ -186,7 +217,7 @@ body {
             bottom: 57px;
             width: 100%;
             display: flex;
-            flex-direction: column; 
+            flex-direction: column;
             margin: 0 auto;
             padding: 0 25px;
         }
@@ -195,5 +226,98 @@ body {
     .rightbar {
         flex: 1;
         background: #FDF3EE;
+
+        .content {
+            padding: 0 35px;
+            margin-top: 60px;
+            .user{
+                font-size: 32px;
+                font-weight: 700;
+                color: $secondary;
+                font-family: "DarkerGrotesque-Bold", sans-serif;
+            }
+            .titleBar{
+                font-size: 16px;
+                font-weight: 500;
+                color: #BBB1A6;
+            }
+            .date{
+                font-size: 16px;
+                font-weight:500;
+                color: #003057;
+                border-bottom: 1px solid #E1D8CE;
+            }
+            .info{
+                font-size: 19px;
+                font-weight:700;
+                color: #003057; 
+            }
+            .amount{
+                font-size: 37px;
+                font-weight: 700; color: $secondary;
+                font-family: "DarkerGrotesque-Bold", sans-serif;
+            }
+        }
+
+        .topBar {
+            margin-top: 35px;
+            padding: 0 35px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .items {
+                flex: 1;
+
+                .account {}
+
+                .inputSearch {
+                    position: relative;
+                    padding-left: 34px;
+                    background-color: #E8E1D9;
+                    height: 35px;
+                    max-width: 211px;
+                    border: none;
+                    border-radius: 5px;
+                    outline: none;
+
+                    &:focus {
+                        outline: 0 !important;
+                        color: #003057;
+                    }
+
+                    &::placeholder {
+                        color: #BBB1A6;
+                    }
+
+                }
+
+                .icon {
+                    position: absolute;
+                    left: 9px;
+                    z-index: 1;
+                    font-size: 1.3rem;
+                    top: 8px;
+                    color: #BBB1A6;
+                }
+            }
+        }
+    }
+}
+
+
+.collapsable {
+    position: absolute;
+    right: -30px;
+    top: 96px;
+    display: none;
+    cursor: pointer;
+
+    @media(max-width:880px) {
+        display: block;
+    }
+
+    .icon {
+        font-size: 2rem;
     }
 }
