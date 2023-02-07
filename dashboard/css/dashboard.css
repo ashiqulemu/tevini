@@ -194,6 +194,13 @@ body {
   padding: 0 35px;
   margin-top: 60px;
 }
+.dashboard-wraper .rightbar .content .pagetitle {
+  font-size: 36px;
+  font-weight: 700;
+  color: #003057;
+  font-family: "DarkerGrotesque-Bold", sans-serif;
+  border-bottom: 1px solid #E1D8CE;
+}
 .dashboard-wraper .rightbar .content .user {
   font-size: 32px;
   font-weight: 700;
@@ -249,9 +256,6 @@ body {
 .dashboard-wraper .rightbar .topBar .items .inputSearch::-moz-placeholder {
   color: #BBB1A6;
 }
-.dashboard-wraper .rightbar .topBar .items .inputSearch:-ms-input-placeholder {
-  color: #BBB1A6;
-}
 .dashboard-wraper .rightbar .topBar .items .inputSearch::placeholder {
   color: #BBB1A6;
 }
@@ -278,4 +282,53 @@ body {
 }
 .collapsable .icon {
   font-size: 2rem;
+}
+
+form .form-group {
+  margin-bottom: 10px;
+}
+form .form-group label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #003057;
+  display: block;
+  margin-bottom: 8px;
+  font-family: "DarkerGrotesque-Regular", sans-serif;
+}
+form .form-group .form-control {
+  box-shadow: none;
+  height: 39px;
+  border-radius: 5px;
+  background-color: white;
+  outline: 0;
+  color: #003057;
+  border: 0;
+  padding-left: 15px;
+}
+form .form-group .form-control::-moz-placeholder {
+  color: #BBB1A6;
+}
+form .form-group .form-control::placeholder {
+  color: #BBB1A6;
+}
+form .form-group .form-control:focus {
+  border-color: #18988B;
+}
+form .form-group .form-check {
+  height: 39px;
+  width: 39px;
+  border-radius: 5px;
+  background-color: white;
+  border: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin-right: 17px;
+  position: relative;
+}
+form .form-group .form-check:checked::after {
+  content: url("../images/iconmonstr-check-mark-1.svg");
+  position: absolute;
+  left: 10px;
+  top: 9px;
 }/*# sourceMappingURL=dashboard.css.map */

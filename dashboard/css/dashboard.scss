@@ -72,7 +72,7 @@ a {
 // needable  classes 
 
 .txt-primary {
-    color: $primary!important;
+    color: $primary !important;
 }
 
 .txt-secondary {
@@ -89,7 +89,7 @@ a {
 }
 
 .bg-ternary {
-    background: #BBB1A6!important ;
+    background: #BBB1A6 !important;
 }
 
 .btn-theme {
@@ -145,7 +145,8 @@ body {
 .fs-16 {
     font-size: 16px;
 }
-.txt-dash{
+
+.txt-dash {
     font-size: 23px;
     font-weight: 700;
 }
@@ -230,31 +231,45 @@ body {
         .content {
             padding: 0 35px;
             margin-top: 60px;
-            .user{
+
+            .pagetitle {
+                font-size: 36px;
+                font-weight: 700;
+                color: $secondary;
+                font-family: "DarkerGrotesque-Bold", sans-serif;
+                border-bottom: 1px solid #E1D8CE;
+            }
+
+            .user {
                 font-size: 32px;
                 font-weight: 700;
                 color: $secondary;
                 font-family: "DarkerGrotesque-Bold", sans-serif;
             }
-            .titleBar{
+
+            .titleBar {
                 font-size: 16px;
                 font-weight: 500;
                 color: #BBB1A6;
             }
-            .date{
+
+            .date {
                 font-size: 16px;
-                font-weight:500;
+                font-weight: 500;
                 color: #003057;
                 border-bottom: 1px solid #E1D8CE;
             }
-            .info{
+
+            .info {
                 font-size: 19px;
-                font-weight:700;
-                color: #003057; 
+                font-weight: 700;
+                color: #003057;
             }
-            .amount{
+
+            .amount {
                 font-size: 37px;
-                font-weight: 700; color: $secondary;
+                font-weight: 700;
+                color: $secondary;
                 font-family: "DarkerGrotesque-Bold", sans-serif;
             }
         }
@@ -319,5 +334,59 @@ body {
 
     .icon {
         font-size: 2rem;
+    }
+}
+
+form {
+    .form-group {
+        margin-bottom: 10px;
+
+        label {
+            font-size: 16px;
+            font-weight: 500;
+            color: $secondary;
+            display: block;
+            margin-bottom: 8px;
+            font-family: "DarkerGrotesque-Regular", sans-serif;
+        }
+
+        .form-control {
+            box-shadow: none;
+            height: 39px;
+            border-radius: 5px;
+            background-color: white;
+            outline: 0;
+            color: $secondary;
+            border: 0;
+            padding-left: 15px;
+
+            &::placeholder {
+                color: #BBB1A6;
+            }
+
+            &:focus {
+                border-color: $primary;
+            }
+        }
+
+        .form-check {
+            height: 39px;
+            width: 39px;
+            border-radius: 5px;
+            background-color: white;
+            border: 0;
+            appearance: none;
+            margin-right: 17px;
+            position: relative;
+
+            &:checked {
+                &::after {
+                    content: url('../images/iconmonstr-check-mark-1.svg');
+                    position: absolute;
+                    left: 10px;
+                    top: 9px;
+                }
+            }
+        }
     }
 }
