@@ -113,6 +113,10 @@ body {
   font-family: "DarkerGrotesque-regular", sans-serif;
 }
 
+.fs-12 {
+  font-size: 12px;
+}
+
 .fs-14 {
   font-size: 14px;
 }
@@ -141,7 +145,7 @@ body {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: -250px;
+    left: -270px;
     z-index: 2;
   }
 }
@@ -191,12 +195,13 @@ body {
   background: #FDF3EE;
 }
 .dashboard-wraper .rightbar .content {
-  padding: 0 35px;
+  padding: 0 25px;
   margin-top: 60px;
 }
 .dashboard-wraper .rightbar .content .pagetitle {
   font-size: 36px;
   font-weight: 700;
+  line-height: 1;
   color: #003057;
   font-family: "DarkerGrotesque-Bold", sans-serif;
   border-bottom: 1px solid #E1D8CE;
@@ -231,13 +236,13 @@ body {
 }
 .dashboard-wraper .rightbar .topBar {
   margin-top: 35px;
-  padding: 0 35px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .dashboard-wraper .rightbar .topBar .items {
   flex: 1;
+  padding: 0 25px;
 }
 .dashboard-wraper .rightbar .topBar .items .inputSearch {
   position: relative;
@@ -314,7 +319,70 @@ form .form-group .form-control::placeholder {
 form .form-group .form-control:focus {
   border-color: #18988B;
 }
-form .form-group .form-check {
+
+@media (min-width: 1024px) {
+  .border-left-lg {
+    border-left: 1px solid #E1D8CE;
+  }
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.inner .left {
+  flex-basis: 50px;
+}
+.inner .left .box-input {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border: 0;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  padding: 5px;
+  outline: 0;
+}
+.inner .left label {
+  font-family: "DarkerGrotesque-regular", sans-serif;
+  font-size: 16px;
+}
+.inner .right {
+  flex: 1;
+}
+.inner .right .title {
+  font-family: "DarkerGrotesque-Regular", sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  color: #003057;
+  position: relative;
+}
+.inner .right .title .badge {
+  height: 21px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  position: absolute;
+  left: 53%;
+  top: 6px;
+}
+.inner .right .title .badge.prepaid {
+  background-color: #18988B;
+}
+.inner .right .title .badge.postpaid {
+  background-color: #003057;
+}
+.inner .right .bottom-data {
+  font-family: "DarkerGrotesque-regular", sans-serif;
+  font-size: 16px;
+  color: #003057;
+  font-weight: 500;
+}
+
+.form-check {
   height: 39px;
   width: 39px;
   border-radius: 5px;
@@ -323,10 +391,10 @@ form .form-group .form-check {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  margin-right: 17px;
+  margin-right: 14px;
   position: relative;
 }
-form .form-group .form-check:checked::after {
+.form-check:checked::after {
   content: url("../images/iconmonstr-check-mark-1.svg");
   position: absolute;
   left: 10px;
