@@ -17,6 +17,15 @@ $white: #fff;
     background: $secondary;
 }
 
+body::-webkit-scrollbar {
+    background-color: #fefefe;
+    width: 7px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: $primary;
+  }
 
 // font
 
@@ -76,7 +85,7 @@ a {
 }
 
 .txt-secondary {
-    color: $secondary!important;
+    color: $secondary !important;
 }
 
 
@@ -150,8 +159,15 @@ body {
     font-size: 16px;
 }
 
+.fs-20 {
+    font-size: 20px;
+}
+
 .fs-23 {
     font-size: 23px;
+}
+.fs-24 {
+    font-size: 24px;
 }
 
 .txt-dash {
@@ -379,7 +395,7 @@ form {
             }
         }
 
-        
+
     }
 }
 
@@ -428,7 +444,7 @@ form {
             position: relative;
 
             .badge {
-               
+
                 height: 21px;
                 display: inline-flex;
                 align-items: center;
@@ -437,11 +453,13 @@ form {
                 position: absolute;
                 left: 53%;
                 top: 6px;
-                &.prepaid{
-                    background-color:$primary;
+
+                &.prepaid {
+                    background-color: $primary;
                 }
-                &.postpaid{
-                    background-color:$secondary;
+
+                &.postpaid {
+                    background-color: $secondary;
                 }
             }
         }
@@ -474,3 +492,66 @@ form {
         }
     }
 }
+
+#myTab {
+    border-bottom: 1px solid #009c8d;
+
+    .nav-link {
+        margin-bottom: -1px;
+        background: 0 0;
+        border: 1px solid transparent;
+        border-top-left-radius: 7px!important;
+        border-top-right-radius: 7px!important;
+        font-size: 16px;
+        color: #009a8c;
+        &.active {
+            color: #ffffff !important;
+            background-color: #009a8c !important;
+            border-color: #009c8d #009c8d #009c8d !important;
+        }
+    }
+}
+
+.data-container {
+    padding: 0 7px;
+    max-width: 100vw;
+    max-height: 73vh;
+    overflow: auto;
+    &::-webkit-scrollbar {
+        background-color: #fefefe;
+        width: 7px;
+      }
+      
+      &::-webkit-scrollbar-thumb {
+        border-radius: 50px;
+        background: $secondary;
+      }
+    .table-theme{ 
+        border-collapse: unset;
+        thead{
+            tr{
+                th{
+                    font-family: "DarkerGrotesque-regular", sans-serif;
+                    font-weight: normal;
+                    font-size: 16px;
+                    color: #BBB1A6;
+                    border: 0;
+                }
+            }
+        }
+        tbody{
+            tr{
+                td{
+                    font-family: "DarkerGrotesque-regular", sans-serif;
+                    vertical-align: middle;
+                    border: 0;
+
+                    @media(max-width:768px){
+                        min-width: 180px;
+                    }
+                }
+            }
+        }
+    }
+}
+

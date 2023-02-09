@@ -14,6 +14,16 @@
   background: #003057;
 }
 
+body::-webkit-scrollbar {
+  background-color: #fefefe;
+  width: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: #18988B;
+}
+
 @font-face {
   font-family: "Roboto-Regular";
   src: url(../fonts/Roboto-Regular.ttf);
@@ -125,8 +135,16 @@ body {
   font-size: 16px;
 }
 
+.fs-20 {
+  font-size: 20px;
+}
+
 .fs-23 {
   font-size: 23px;
+}
+
+.fs-24 {
+  font-size: 24px;
 }
 
 .txt-dash {
@@ -405,4 +423,57 @@ form .form-group .form-control:focus {
   position: absolute;
   left: 10px;
   top: 9px;
+}
+
+#myTab {
+  border-bottom: 1px solid #009c8d;
+}
+#myTab .nav-link {
+  margin-bottom: -1px;
+  background: 0 0;
+  border: 1px solid transparent;
+  border-top-left-radius: 7px !important;
+  border-top-right-radius: 7px !important;
+  font-size: 16px;
+  color: #009a8c;
+}
+#myTab .nav-link.active {
+  color: #ffffff !important;
+  background-color: #009a8c !important;
+  border-color: #009c8d #009c8d #009c8d !important;
+}
+
+.data-container {
+  padding: 0 7px;
+  max-width: 100vw;
+  max-height: 73vh;
+  overflow: auto;
+}
+.data-container::-webkit-scrollbar {
+  background-color: #fefefe;
+  width: 7px;
+}
+.data-container::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: #003057;
+}
+.data-container .table-theme {
+  border-collapse: unset;
+}
+.data-container .table-theme thead tr th {
+  font-family: "DarkerGrotesque-regular", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: #BBB1A6;
+  border: 0;
+}
+.data-container .table-theme tbody tr td {
+  font-family: "DarkerGrotesque-regular", sans-serif;
+  vertical-align: middle;
+  border: 0;
+}
+@media (max-width: 768px) {
+  .data-container .table-theme tbody tr td {
+    min-width: 180px;
+  }
 }/*# sourceMappingURL=dashboard.css.map */
