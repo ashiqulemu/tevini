@@ -76,7 +76,7 @@ a {
 }
 
 .txt-secondary {
-    color: $secondary !important;
+    color: $secondary!important;
 }
 
 
@@ -285,7 +285,7 @@ body {
 
         .topBar {
             margin-top: 35px;
-            // padding: 0 35px;
+            flex-wrap: wrap;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -401,6 +401,7 @@ form {
 
         .box-input {
             width: 40px;
+            text-align: center;
             height: 40px;
             background-color: white;
             border: 0;

@@ -240,6 +240,7 @@ body {
 }
 .dashboard-wraper .rightbar .topBar {
   margin-top: 35px;
+  flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -341,6 +342,7 @@ form .form-group .form-control:focus {
 }
 .inner .left .box-input {
   width: 40px;
+  text-align: center;
   height: 40px;
   background-color: white;
   border: 0;
