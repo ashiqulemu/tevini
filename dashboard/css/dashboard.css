@@ -310,7 +310,7 @@ body {
 
 .collapsable {
   position: absolute;
-  right: -30px;
+  right: -46px;
   top: 96px;
   display: none;
   cursor: pointer;
@@ -489,6 +489,9 @@ form .form-group .form-control:focus {
     min-width: 180px;
   }
 }
+.data-container .table-theme tfoot td {
+  border: 0;
+}
 
 .calculatior {
   border-radius: 12px;
@@ -500,4 +503,33 @@ form .form-group .form-control:focus {
 }
 .calculatior .progress-bar {
   background-color: #18988B;
+}
+
+.switch {
+  font-size: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+  border: 1px solid #009a8c;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.switch .items {
+  text-align: center;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.switch .items input {
+  display: none;
+}
+.switch .items input:checked + label {
+  background-color: #18988B;
+  color: #fff;
+}
+.switch .items label {
+  padding: 5px;
+  cursor: pointer;
 }/*# sourceMappingURL=dashboard.css.map */

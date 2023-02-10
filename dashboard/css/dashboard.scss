@@ -319,7 +319,9 @@ body {
                 flex: 1;
                 padding: 0 25px;
 
-                .account {}
+                .account {
+
+                }
 
                 .inputSearch {
                     position: relative;
@@ -358,7 +360,7 @@ body {
 
 .collapsable {
     position: absolute;
-    right: -30px;
+    right: -46px;
     top: 96px;
     display: none;
     cursor: pointer;
@@ -561,6 +563,9 @@ form {
                 }
             }
         }
+        tfoot{
+           td{ border: 0;}
+        }
     }
 }
 
@@ -574,4 +579,37 @@ form {
     .progress-bar{
         background-color: $primary;
     }
+}
+
+
+.switch{
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+    border: 1px solid #009a8c;
+    border-radius: 7px;
+    overflow: hidden;
+   .items{
+    text-align: center;
+    flex:  1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    input{
+        display: none;
+         &:checked{
+             &+label{
+               background-color: $primary;
+               color: #fff;
+              
+             }
+         }
+        
+     } label{
+            padding: 5px;
+            cursor: pointer;
+         }
+   }
 }
