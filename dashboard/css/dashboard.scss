@@ -20,12 +20,12 @@ $white: #fff;
 body::-webkit-scrollbar {
     background-color: #fefefe;
     width: 7px;
-  }
-  
-  body::-webkit-scrollbar-thumb {
+}
+
+body::-webkit-scrollbar-thumb {
     border-radius: 50px;
     background: $primary;
-  }
+}
 
 // font
 
@@ -166,16 +166,20 @@ body {
 .fs-23 {
     font-size: 23px;
 }
+
 .fs-24 {
     font-size: 24px;
 }
+
 .fs-36 {
     font-size: 36px;
 }
+
 .fs-37 {
     font-size: 37px;
 }
-.border-bottom{
+
+.border-bottom {
     border-bottom: 1px solid #E1D8CE;
 }
 
@@ -200,7 +204,7 @@ body {
             top: 0;
             bottom: 0;
             left: -270px;
-            z-index: 2;
+            z-index: 2; 
         }
 
         &.active {
@@ -319,9 +323,7 @@ body {
                 flex: 1;
                 padding: 0 25px;
 
-                .account {
-
-                }
+                .account {}
 
                 .inputSearch {
                     position: relative;
@@ -511,10 +513,11 @@ form {
         margin-bottom: -1px;
         background: 0 0;
         border: 1px solid transparent;
-        border-top-left-radius: 7px!important;
-        border-top-right-radius: 7px!important;
+        border-top-left-radius: 7px !important;
+        border-top-right-radius: 7px !important;
         font-size: 16px;
         color: #009a8c;
+
         &.active {
             color: #ffffff !important;
             background-color: #009a8c !important;
@@ -528,20 +531,23 @@ form {
     max-width: 100vw;
     max-height: 73vh;
     overflow: auto;
+
     &::-webkit-scrollbar {
         background-color: #fefefe;
         width: 7px;
-      }
-      
-      &::-webkit-scrollbar-thumb {
+    }
+
+    &::-webkit-scrollbar-thumb {
         border-radius: 50px;
         background: $secondary;
-      }
-    .table-theme{ 
+    }
+
+    .table-theme {
         border-collapse: unset;
-        thead{
-            tr{
-                th{
+
+        thead {
+            tr {
+                th {
                     font-family: "DarkerGrotesque-regular", sans-serif;
                     font-weight: normal;
                     font-size: 16px;
@@ -550,39 +556,44 @@ form {
                 }
             }
         }
-        tbody{
-            tr{
-                td{
+
+        tbody {
+            tr {
+                td {
                     font-family: "DarkerGrotesque-regular", sans-serif;
                     vertical-align: middle;
                     border: 0;
 
-                    @media(max-width:768px){
+                    @media(max-width:768px) {
                         min-width: 180px;
                     }
                 }
             }
         }
-        tfoot{
-           td{ border: 0;}
+
+        tfoot {
+            td {
+                border: 0;
+            }
         }
     }
 }
 
-.calculatior{
+.calculatior {
     border-radius: 12px;
     border: 1px solid #E1D8CE;
     padding: 25px;
     display: flex;
     align-items: end;
     min-height: 400px;
-    .progress-bar{
+
+    .progress-bar {
         background-color: $primary;
     }
 }
 
 
-.switch{
+.switch {
     font-size: 18px;
     display: inline-flex;
     align-items: center;
@@ -591,25 +602,30 @@ form {
     border: 1px solid #009a8c;
     border-radius: 7px;
     overflow: hidden;
-   .items{
-    text-align: center;
-    flex:  1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    input{
-        display: none;
-         &:checked{
-             &+label{
-               background-color: $primary;
-               color: #fff;
-              
-             }
-         }
-        
-     } label{
+
+    .items {
+        text-align: center;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        input {
+            display: none;
+
+            &:checked {
+                &+label {
+                    background-color: $primary;
+                    color: #fff;
+
+                }
+            }
+
+        }
+
+        label {
             padding: 5px;
             cursor: pointer;
-         }
-   }
+        }
+    }
 }
