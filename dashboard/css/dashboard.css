@@ -224,6 +224,12 @@ body {
   margin: 0 auto;
   padding: 0 25px;
 }
+@media (max-width: 880px) {
+  .dashboard-wraper .sidebar .bottom-part {
+    bottom: 13px;
+    padding: 0 7px;
+  }
+}
 .dashboard-wraper .rightbar {
   flex: 1;
   background: #FDF3EE;
@@ -310,7 +316,7 @@ body {
 
 .collapsable {
   position: absolute;
-  right: -46px;
+  right: -30px;
   top: 96px;
   display: none;
   cursor: pointer;
@@ -318,6 +324,7 @@ body {
 @media (max-width: 880px) {
   .collapsable {
     display: block;
+    right: -45px;
   }
 }
 .collapsable .icon {
