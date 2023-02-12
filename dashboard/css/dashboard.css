@@ -197,7 +197,7 @@ body {
   justify-content: center;
 }
 .dashboard-wraper .sidebar .navigation {
-  margin-top: 80px;
+  margin-top: 55px;
   padding-left: 0;
   padding-right: 32px;
 }
@@ -221,7 +221,7 @@ body {
 }
 .dashboard-wraper .sidebar .bottom-part {
   position: absolute;
-  bottom: 57px;
+  bottom: 15px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -240,7 +240,7 @@ body {
 }
 .dashboard-wraper .rightbar .content {
   padding: 0 25px;
-  margin-top: 60px;
+  margin-top: 24px;
 }
 .dashboard-wraper .rightbar .content .pagetitle {
   font-size: 36px;
@@ -444,7 +444,7 @@ form .form-group .form-control:focus {
 .form-check:checked::after {
   content: url("../images/iconmonstr-check-mark-1.svg");
   position: absolute;
-  left: 10px;
+  left: 7px;
   top: 9px;
 }
 

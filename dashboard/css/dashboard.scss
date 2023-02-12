@@ -225,7 +225,7 @@ body {
         }
 
         .navigation {
-            margin-top: 80px;
+            margin-top: 55px;
             padding-left: 0;
             padding-right: 32px;
 
@@ -256,7 +256,7 @@ body {
 
         .bottom-part {
             position: absolute;
-            bottom: 57px;
+            bottom:15px;
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -276,7 +276,7 @@ body {
 
         .content {
             padding: 0 25px;
-            margin-top: 60px;
+            margin-top: 24px;
 
             .pagetitle {
                 font-size: 36px;
@@ -510,7 +510,7 @@ form {
         &::after {
             content: url('../images/iconmonstr-check-mark-1.svg');
             position: absolute;
-            left: 10px;
+            left: 7px;
             top: 9px;
         }
     }
