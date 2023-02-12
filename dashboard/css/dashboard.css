@@ -183,12 +183,13 @@ body {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: -270px;
+    left: -254px;
     z-index: 2;
   }
 }
 .dashboard-wraper .sidebar.active {
   left: 0;
+  box-shadow: -8px 10px 7px 16px rgba(0, 0, 0, 0.1098039216);
 }
 .dashboard-wraper .sidebar .brand {
   margin-top: 50px;
@@ -285,9 +286,22 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 600px) {
+  .dashboard-wraper .rightbar .topBar {
+    margin-top: 25px;
+  }
+}
 .dashboard-wraper .rightbar .topBar .items {
   flex: 1;
   padding: 0 25px;
+}
+@media (max-width: 600px) {
+  .dashboard-wraper .rightbar .topBar .items {
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 18px;
+    line-height: 1.8;
+  }
 }
 .dashboard-wraper .rightbar .topBar .items .inputSearch {
   position: relative;
@@ -328,11 +342,15 @@ body {
 @media (max-width: 880px) {
   .collapsable {
     display: block;
-    right: -45px;
+    right: -42px;
   }
 }
 .collapsable .icon {
+  border-radius: 0 6px 7px 0;
   font-size: 2rem;
+  background: #009a8c;
+  color: #fff;
+  padding: 5px;
 }
 
 form .form-group {

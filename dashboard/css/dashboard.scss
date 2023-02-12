@@ -207,12 +207,14 @@ body {
             position: fixed;
             top: 0;
             bottom: 0;
-            left: -270px;
-            z-index: 2; 
+            left: -254px;
+            z-index: 2;
+            
         }
 
         &.active {
             left: 0;
+            box-shadow: -8px 10px 7px 16px #0000001c;
         }
 
 
@@ -256,14 +258,14 @@ body {
 
         .bottom-part {
             position: absolute;
-            bottom:15px;
+            bottom: 15px;
             width: 100%;
             display: flex;
             flex-direction: column;
             margin: 0 auto;
             padding: 0 25px;
 
-            @media(max-width:880px){
+            @media(max-width:880px) {
                 bottom: 13px;
                 padding: 0 7px;
             }
@@ -328,11 +330,21 @@ body {
             justify-content: space-between;
             align-items: center;
 
+            @media(max-width:600px) {
+                margin-top: 25px;
+            }
+
             .items {
                 flex: 1;
                 padding: 0 25px;
 
-                .account {}
+                @media(max-width:600px) {
+                   justify-content: center !important;
+                   align-items: center!important;
+                   gap: 18px;
+                   line-height: 1.8;
+                }
+
 
                 .inputSearch {
                     position: relative;
@@ -378,11 +390,15 @@ body {
 
     @media(max-width:880px) {
         display: block;
-        right: -45px;
+        right: -42px;
     }
 
     .icon {
+        border-radius: 0 6px 7px 0;
         font-size: 2rem;
+    background: #009a8c;
+    color: #fff;
+    padding: 5px;
     }
 }
 
