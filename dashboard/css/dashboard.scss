@@ -274,7 +274,9 @@ body {
 
     .rightbar {
         flex: 1;
-        background: #FDF3EE;
+    background: #FDF3EE;
+    overflow-y: scroll;
+    max-height: 100vh;
 
         .content {
             padding: 0 25px;
@@ -384,7 +386,7 @@ body {
 .collapsable {
     position: absolute;
     right: -30px;
-    top: 96px;
+    top: 65px;
     display: none;
     cursor: pointer;
 
