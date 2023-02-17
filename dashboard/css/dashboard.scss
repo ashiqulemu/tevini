@@ -183,6 +183,21 @@ body {
     font-size: 37px;
 }
 
+.fw500{
+    font-weight: 500;
+    font-family: "DarkerGrotesque-Regular", sans-serif;
+}
+
+.fw700{
+    font-weight: 700;
+    font-family: "DarkerGrotesque-Regular", sans-serif;
+}
+
+.fw800{
+    font-weight: 800;
+    font-family: "DarkerGrotesque-Regular", sans-serif;
+}
+
 .border-bottom {
     border-bottom: 1px solid #E1D8CE;
 }
@@ -190,6 +205,8 @@ body {
 .txt-dash {
     font-size: 23px;
     font-weight: 700;
+    color: #003057;
+    font-family: "DarkerGrotesque-Regular", sans-serif;
 }
 
 
@@ -292,10 +309,16 @@ body {
             }
 
             .user {
-                font-size: 32px;
+                font-size: 36px;
                 font-weight: 700;
                 color: $secondary;
                 font-family: "DarkerGrotesque-Bold", sans-serif;
+            }
+            .btn-transaction{
+                background-color: #E8E1D9;
+                color: #003057;
+                font-size: 16px;
+                font-weight: 700;
             }
 
             .titleBar {
@@ -321,6 +344,7 @@ body {
                 font-size: 37px;
                 font-weight: 700;
                 color: $secondary;
+                line-height: 26px;
                 font-family: "DarkerGrotesque-Bold", sans-serif;
             }
         }
