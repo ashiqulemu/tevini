@@ -36,10 +36,25 @@
                 <li><a href="standing-orders.html">Standing orders</a></li>
                 <li><a href="maaser-calculator.html">Maaser calculator</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li class="navigation-link">
+                    <span>Dropdown</span>
+                    <ul>
+                        <li><a href="#">one</a></li>
+                        <li><a href="#">two</a></li>
+                    </ul>
+                </li> 
+                <li class="navigation-link">
+                    <span>Dropdown 2</span>
+                    <ul>
+                        <li><a href="#">Three</a></li>
+                        <li><a href="#">Four</a></li>
+                    </ul>
+                </li> 
+              
             </ul>
             <div class="bottom-part">
-                <a href="#" class="btn-theme bg-secondary">Order voucher books</a>
-                <a href="#" class="btn-theme bg-primary">Make a donation</a>
+                <!-- <a href="#" class="btn-theme bg-secondary">Order voucher books</a>
+                <a href="#" class="btn-theme bg-primary">Make a donation</a> -->
                 <a href="#" class="mt-2 d-flex justify-content-center txt-theme fw-bold align-items-center">
                     <iconify-icon icon="humbleicons:logout"></iconify-icon>
                     &nbsp;Log out
@@ -236,14 +251,17 @@
         }
     </script>
 
-    <!--  <script>
-        document.onkeydown = function(e) {
-          if (e.ctrlKey && e.keyCode === 85) { 
-             alert("you cant get my code ever :)");
-             return false;
-          }
-        };
-       </script> -->
+    <script>
+        var mycls = document.getElementsByClassName('navigation-link');
+        for(let i=0; i<=mycls.length; i++){
+        mycls[i].addEventListener("click",function(){ 
+            for (var j = 0; j < mycls.length; j++) {
+            mycls[j].classList.remove('active');
+            }
+            this.classList.add('active');
+        });
+        }
+    </script>
 
 </body>
 
