@@ -36,20 +36,41 @@
                 <li><a href="standing-orders.html">Standing orders</a></li>
                 <li><a href="maaser-calculator.html">Maaser calculator</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li class="navigation-link">
-                    <span>Dropdown</span>
-                    <ul>
-                        <li><a href="#">one</a></li>
-                        <li><a href="#">two</a></li>
-                    </ul>
-                </li> 
-                <li class="navigation-link">
-                    <span>Dropdown 2</span>
-                    <ul>
-                        <li><a href="#">Three</a></li>
-                        <li><a href="#">Four</a></li>
-                    </ul>
-                </li> 
+                
+                <div class="accordion" id="dropdownLink">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                         Other dropdown 
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse  " aria-labelledby="headingOne" data-bs-parent="#dropdownLink">
+                        <div class="accordion-body">
+                           <li>
+                              <a href="#">asdsad</a>
+                           </li>
+                           <li>
+                              <a href="#">asdsad</a>
+                           </li>
+                           
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Other dropdown 
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#dropdownLink">
+                        <div class="accordion-body">
+                            <li>
+                                <a href="#">asdsad</a>
+                             </li>
+                        </div>
+                      </div>
+                    </div> 
+                  </div>
               
             </ul>
             <div class="bottom-part">
@@ -250,18 +271,7 @@
             }
         }
     </script>
-
-    <script>
-        var mycls = document.getElementsByClassName('navigation-link');
-        for(let i=0; i<=mycls.length; i++){
-        mycls[i].addEventListener("click",function(){ 
-            for (var j = 0; j < mycls.length; j++) {
-            mycls[j].classList.remove('active');
-            }
-            this.classList.add('active');
-        });
-        }
-    </script>
+ 
 
 </body>
 
