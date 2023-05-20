@@ -218,7 +218,7 @@ body::-webkit-scrollbar-thumb {
   margin-top: 35px;
   padding-left: 0;
   padding-right: 32px;
-  max-height: 79vh;
+  max-height: calc(88vh - 225px);
   transition: all 0.4s ease;
   overflow: hidden;
 }
